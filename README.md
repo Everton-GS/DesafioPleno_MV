@@ -41,7 +41,8 @@ usuario:root
 
 senha:java
 ```
-![phpMyAdmin](https://github.com/user-attachments/assets/3e5dc00e-0ed8-4a7a-b37d-9513643d971a)
+![phpMyAdmin](./imagens/minha-imagem.pngphpMyAdmin.png)
+![Descrição da Imagem](./img/phpMyAdmin.png)
 
 Esta imagem mostra o sistema interno do SGBD (Sistema de Gerenciamento de Banco de Dados).
 
