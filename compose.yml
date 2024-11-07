@@ -1,0 +1,47 @@
+services:
+  db:
+    image: mysql:8.0.31
+    volumes:
+      - dbase:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: db_mv
+      MYSQL_ROOT_PASSWORD: java
+    networks:
+      - aw-network
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - "8000:80"
+    networks:
+      - aw-network
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - aw-network
+
+  grafana:
+    image: grafana/grafana:latest
+    volumes:
+      - grafana_data:/var/lib/grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - aw-network
+
+networks:
+  aw-network:
+    driver: bridge
+
+volumes:
+  dbase:
+  prometheus_data:
+  grafana_data:
