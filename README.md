@@ -103,7 +103,7 @@ Clicando na opção menu "Dashboard", exibirá um modelo de apresentação ao qu
 
 Clicando no modelo em questão: "spring boot statistics & endpoint metrics".
 
-![Descrição da Imagem](./img/selecione.png)
+![Descrição da Imagem](./img/Selecione.png)
 
 O dashboard será apresentado desta maneira:
 
